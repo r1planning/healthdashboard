@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mental Health Board v0.01</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap');
+	</style> 
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+
+<body>
+	<div class="header" style="padding-bottom: 0em; margin-bottom: 0em;">
+		<div class="row" style="padding: 0em 2em; margin-bottom: 0em;">
+			<div class="column notlogo" style="padding: 0em; margin-bottom: 0em; color: #BAD7DF">
+				<h1>Community Health Dashboard
+				</h1>
+				<br>
+				<h2 style="color: #fff;">City of Rockford, IL
+				</h2>
+				<br><br><i>A finger on the pulse of health in our city!</i>
+				<br> &nbsp;
+			</div>
+			<div class="column logo" style="padding: 0em; margin-bottom: 0em;">
+			<img src="https://rockfordil.gov/wp-content/themes/rockford/assets/images/General/Rockford_Logo.png" class="responsive-img">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="header_special">
+
+		<div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+		</div>
+
+		<div class="main_menu">
+			<div>
+				<button onclick="location.href='../index.html'">Home</button>
+				<div class="dropdown">
+				  <button class="dropbtn">Health Indicators</button>
+				  <div class="dropdown-content">
+				    <a href="../health/overdose.html">Overdose</a>
+				    <a href="../health/death.html">Death</a>
+				    <a href="../health/pregnancy.html">Pregnancy</a>
+				  </div>
+				</div>
+				<div class="dropdown">
+				  <button class="dropbtn active">Social Determinants</button>
+				  <div class="dropdown-content">
+				    <a href="../social/healthcare.html">Healthcare Access</a>
+				    <a href="../social/education.html">Education Access</a>
+				    <a href="../social/community.html">Community Context</a>
+				    <a href="../social/economic.html">Economic Stability</a>
+				    <a href="../social/built.html">Built Environment</a>
+				  </div>
+				</div>
+				<button onclick="location.href='../map/community.html'">Communtiy Map</button>
+			</div>
+		</div>
+		
+		<div class="sub_menu">
+				<button>Social Determinants</button> >
+				<button onclick="location.href='../social/healthcare.html'">Healthcare Access</button> |
+				<button onclick="location.href='../social/education.html'">Education Access</button> | 
+				<button onclick="location.href='../social/community.html'">Community Context</button> |
+				<button onclick="location.href='../social/economic.html'" class="active">Economic Stability</button> |
+				<button onclick="location.href='../social/built.html'">Built Environment</button>
+		</div>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Income Spent on <strong>Housing</strong> in Rockford</h2>
+	    <img src="./economic/Rent Ridgeline.png" class="responsive-img">
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>Housing is the <strong>single biggest expense</strong> for the vast majority of Americans.
+		<br><br>
+	    The role housing plays in overall health is obvious when one considers the physical harm that can come from not having a dry, temperature controlled, safe place to stay. 
+	    <br>
+	    <br>
+	    Less obvious is the role housing has on mental wellbeing. When it is harder to find or afford housing, it is harder to leave an abuser, leave a problematic home life, or many other situations. Threat of homelessness and the financial burden of housing weigh heavy on mental wellbeing. 
+	    <br><br>
+	    The graph to the left shows the distribution each income bracket spends on housing as a percentage of their income. Notable are the fact that almost all of the poorest households, those in the 0-$20k annual income range, spend over 50% of their income on housing. Considering that Housing Authorities are prohibited from charging more than 30% of a resident's income for housing and are meant to provide housing for these low-income individuals, it appears there is a severe lack of public housing available.
+	    <br>
+	    <br>
+	    Additionally, the poorest residents often obtain housing by renting off landlords. This means the money they spend on housing does not go toward making them wealthier the same way a homeowner with a mortgage does. This graph does not capture the amount of renters vs homeowners, but other graphs on the page about <a href="../social/community.html">Community Context</a> and the page about <a href="../social/built.html">Built Environment</a> do.
+		</p>
+
+		<ul>
+			<li>
+				<a href="https://data.census.gov/cedsci/table?text=income&g=0400000US17%240500000&tid=ACSDT1Y2019.B25074" target="_blank" style="font-size: 1em;">Source</a>
+			</li>
+		</ul>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="second">
+	  <div class="column twothird">
+	    <h2>Where is everyone relative to the <strong>Poverty Line</strong>?</h2>
+	    <iframe src="./economic/Income Brackets by Year Bar 2015 to 2019.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>This graph divides the population of Winnebago County by where their income falls relative to the poverty line. 
+	    <br>
+	    <br>
+	    Between 2015 and 2019 there was substantial growth in those earning between 0 and 50% of the poverty line as well as those earning between 50% and 200%.
+	    <br>
+	    <br>
+	    Over the same time period, there was a growth in those earning more than 500% of the poverty line. This matches a trend across the United States in which the middle class shrinks while the poorest and riches grow.
+	    <br>
+	    <br>
+	    Noteworthy is that data for 2020, the first year drastically affected by the COVID-19 pandemic, are not yet available. Because there was an existing trend in a growing poor population, is it likely that this was exaccerbated as many lost their jobs due to the pandemic. 
+	    </p>
+	    
+		<ul>
+			<li>
+				<a href="https://data.census.gov/cedsci/table?q=&text=poverty&g=0400000US17%240500000&tid=ACSST1Y2019.S1701" target="_blank" style="font-size: 1em;">Source</a>
+			</li>
+		</ul>
+	  </div>
+	</div>
+
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="second">
+	  <div class="column twothird">
+	    <h2>Where is everyone relative to the <strong>Poverty Line</strong>?</h2>
+	    <iframe src="./economic/Income Brackets by Year.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>This chart shows the same information as the one above but divides the population into narrower brackets and displays all of the years between 2015 and 2019. 
+	    <br>
+	    <br>
+	    Year to year, there is considerable variation in most of the brackets with much of the variation being in those earning less than 150% of the poverty line. 
+	    <br>
+	    <br>
+	    The same trend of a shrinking middle class and growin poor and rich classes can be seen.
+	    </p>
+	    <ul>
+			<li>
+				<a href="https://data.census.gov/cedsci/table?q=&text=poverty&g=0400000US17%240500000&tid=ACSST1Y2019.S1701" target="_blank" style="font-size: 1em;">Source</a>
+			</li>
+		</ul>
+	  </div>
+	</div>
+
+	<div class="header" style="text-align: center; color: #BAD7DF;">
+		<br>Test site with FAKE DATA for the WCCMHB
+		<br>
+		<br>Go to <a href="http://r1planning.org/wccmhb" style="color: #fff;">Our Site</a>
+		<br>Our Meetings are live and recorded on <a href="https://www.youtube.com/channel/UCsZW04n6FY4rNZWOJlNBNZg" style="color: #fff;">YouTube</a>
+		<br>Our email: <a href="mailto:info@mentalhealth.wincoil.us" style="color: #fff;">info@mentalhealth.wincoil.us</a>
+		
+	</div>
+</body>
+
+<script>
+	// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
+</script>
+
+</html>

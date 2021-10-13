@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mental Health Board v0.01</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap');
+	</style> 
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+
+<body>
+	<div class="header" style="padding-bottom: 0em; margin-bottom: 0em;">
+		<div class="row" style="padding: 0em 2em; margin-bottom: 0em;">
+			<div class="column notlogo" style="padding: 0em; margin-bottom: 0em; color: #BAD7DF">
+				<h1>Community Health Dashboard
+				</h1>
+				<br>
+				<h2 style="color: #fff;">City of Rockford, IL
+				</h2>
+				<br><br><i>A finger on the pulse of health in our city!</i>
+				<br> &nbsp;
+			</div>
+			<div class="column logo" style="padding: 0em; margin-bottom: 0em;">
+			<img src="https://rockfordil.gov/wp-content/themes/rockford/assets/images/General/Rockford_Logo.png" class="responsive-img">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="header_special">
+
+		<div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+		</div>
+
+		<div class="main_menu">
+			<div>
+				<button onclick="location.href='../index.html'">Home</button>
+				<div class="dropdown">
+				  <button class="dropbtn active">Health Indicators</button>
+				  <div class="dropdown-content">
+				    <a href="../health/overdose.html">Overdose</a>
+				    <a href="../health/death.html">Death</a>
+				    <a href="../health/pregnancy.html">Pregnancy</a>
+				  </div>
+				</div>
+				<div class="dropdown">
+				  <button class="dropbtn">Social Determinants</button>
+				  <div class="dropdown-content">
+				    <a href="../social/healthcare.html">Healthcare Access</a>
+				    <a href="../social/education.html">Education Access</a>
+				    <a href="../social/community.html">Community Context</a>
+				    <a href="../social/economic.html">Economic Stability</a>
+				    <a href="../social/built.html">Built Environment</a>
+				  </div>
+				</div>
+				<button onclick="location.href='../map/community.html'">Communtiy Map</button>
+			</div>
+		</div>
+		
+		<div class="sub_menu">
+				<button>Health Indicators</button> >
+				<button class="active">Overdose</button> | 
+				<button onclick="location.href='../health/death.html'">Death</button> | 
+				<button onclick="location.href='../health/pregnancy.html'">Pregnancy</button>
+		</div>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Overdoses from <strong>Any Drug</strong> (2020)</h2>
+	    <iframe src="overdose/Overdose Any Drug 2020.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>Our peer counties in Illinois from the <a href="https://rockfordhealth.org/healthy-community-study/"target="_blank">Rockford Community Health Study</a> are highlighted in teal. The graph also shows all counties in Illinois with over 50,000 residents.
+		<br><br>
+	    A death from drug overdose is caused from a lethal dose of a drug being taken. One of the most common causes is children unknowingly taking a lethal dose of a medication or seniors who take an incorrect dosage.<sup><a href="https://www.webmd.com/mental-health/addiction/drug-overdose"target="_blank">[1]</a></sup> Many overdose deaths are people who have successfully completed rehabilitation but relapse. These people's bodies are no longer as tolerant as before and so the old level of intake becomes fatal.<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC153851/"target="_blank">[2]</a></sup>
+	    <br><br>
+	    There has been an increasing nation-wide trend in the rate of death from drug overdose. For more information, please see <a href="https://www.cdc.gov/drugoverdose/deaths/index.html">the CDC page on drug overdose</a>.
+		<br><br>
+		For help in the event of a drug overdose, DIAL 911.
+		</p>
+
+		<ul>
+			<li>
+				<a href="https://dph.illinois.gov/data-statistics/vital-statistics/death-statistics.html" target="_blank" style="font-size: 1em;">Source</a>
+			</li>
+		</ul>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider" style="padding-bottom: 1%;">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Overdoses from <strong>Alcohol</strong> (2020)</h2>
+	    <iframe src="overdose/Overdose Alcohol 2020.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>Though not commonly thought of as a drug, alcohol has serious effects on the body and is considered a drug by all definition. 
+		<br><br>
+	    By far the most common death involving alcohol is drunk driving.<sup><a href="https://www.nhtsa.gov/risky-driving/drunk-driving" target="_blank">[3]</a></sup> But, acute alcohol poisoning takes an average of 6 lives each day in the United States.<sup><a href="https://www.cdc.gov/vitalsigns/alcohol-poisoning-deaths/index.html" target="_blank">[4]</a></sup>
+	    <br><br>
+	    The most common victims of alcohol poisoning are non-Hispanic White adult men (3 out of every 4) between the ages of 35 and 64 (76% of total) and a death occurs typically as a result of binge drinking behavior. <sup><a href="https://www.cdc.gov/vitalsigns/alcohol-poisoning-deaths/index.html"target="_blank">[4]</a></sup>
+		<br><br>
+		Alcohol consumption additionally has chronic affects in any form. Overall alcohol consumption is linked with increased mortality and rates of cancer similar to smoking.<sup><a href="https://www.cancerresearchuk.org/about-cancer/causes-of-cancer/alcohol-and-cancer/does-alcohol-cause-cancer" target="_blank">[5]</a></sup> Moderate consumption of alcohol--defined as one bottle one wine per week--is the equivalent of smoking between 5 and 10 cigarettes a week.<sup><a href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-019-6576-9" targer="_blank">[6]</a></sup>
+		<br><br>
+		For more information, please see <a href="https://www.cdc.gov/vitalsigns/alcohol-poisoning-deaths/index.html">the CDC page on alcohol poisoning</a>.</p>
+
+		<ul>
+			<li>
+				<a href="https://dph.illinois.gov/data-statistics/vital-statistics/death-statistics.html" target="_blank" style="font-size: 1em;">Source</a>
+			</li>
+		</ul>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider" style="padding-bottom: 1%;">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Overdoses from <strong>Any Opioid</strong> (2020)</h2>
+	    <iframe src="overdose/Overdose Any Opioid 2020.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>Opioids are chemicals which act on <a href="https://en.wikipedia.org/wiki/Opioid_receptor" target="_blank">opioid recepters</a>. Medically, they are used for pain relief and anesthesia. They are also frequently used non-medically for their euphoric effects. Opioids are also used in veterinary practice along with judicial executions in the United States. 
+	    <br>
+	    <br>
+	    Medically, being addicted to opioids for their euphoric effects is known as <a href="https://pubmed.ncbi.nlm.nih.gov/31919349/" target="_blank">Opioid Use Disorder</a>. <br>
+	    <br>
+	    Death from a lethal dose is from respiratory depression--slow or ineffective breathing. Excluding judicial executions, <a href="https://pubmed.ncbi.nlm.nih.gov/31919349/" target="_blank">around 47,000 people die each year overdose</a>. Synthetic opioids are the cause behind the majority of overdose deaths with the remainder being equally split between Heroin and Commonly Prescribed Opioids. This page details overdoses for Heroin and Synthetic opioids in other graphs.<sup><a href="https://www.cdc.gov/opioids/data/analysis-resources.html">[7]</a></sup>
+	    </p>
+
+		<ul>
+			<li>
+				<a href="https://dph.illinois.gov/data-statistics/vital-statistics/death-statistics.html" target="_blank" style="font-size: 1em;">Source</a>
+			</li>
+		</ul>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider" style="padding-bottom: 1%;">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Overdoses from <strong>Synthetic Substances</strong> (2020)</h2>
+	    <iframe src="overdose/Overdose Synthetic 2020.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>Synthetic opioids, which are included in synthetic substances, <a href="https://www.cdc.gov/opioids/data/analysis-resources.html" target="_blank">cause the majority of opioid overdoses in the United States annually</a>. This increase in detection of synthetic opioids, mainly <strong>fentanyl</strong>, in the bodies of the deceased in forensic labs has not been matched with an increase in prescriptions of such substances, leading many to conclude that much the increase is the result of illegally manufactured synthetic opioids.<sup><a href="https://www.cdc.gov/opioids/data/analysis-resources.html" target="_blank">[8]</a></sup>
+	    </p>
+
+		<ul>
+			<li>
+				<a href="https://dph.illinois.gov/data-statistics/vital-statistics/death-statistics.html" target="_blank" style="font-size: 1em;">Source</a>
+			</li>
+		</ul>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider" style="padding-bottom: 1%;">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Overdoses from <strong>Heroin</strong> (2020)</h2>
+	    <iframe src="overdose/Overdose Heroin 2020.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p><strong>Heroin</strong> is known medically as <strong>diamorphine</strong> and is used to relieve chronic or acute pain though it has not been used medically in the United States for a long time.<sup><a href="https://en.wikipedia.org/wiki/Heroin#cite_note-Drugs2014-3" target="_blank">[9]</a></sup> 
+	    <br>
+	    <br>
+	   <a href="https://www.cdc.gov/opioids/data/analysis-resources.html" target="_blank">Heroin accounts for around the same number of overdoses annual in the United States as those resulting from Commonly Prescribed Opioids</a> though up until 2016, Heroin was the cause of significantly less deaths.<sup><a href="https://www.cdc.gov/opioids/data/analysis-resources.html" target="_blank">[10]</a></sup>
+
+	    </p>
+
+		<ul>
+			<li>
+				<a href="https://dph.illinois.gov/data-statistics/vital-statistics/death-statistics.html" target="_blank" style="font-size: 1em;">Source</a>
+			</li>
+		</ul>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider" style="padding-bottom: 1%;">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="header" style="text-align: center; color: #BAD7DF;">
+		<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"style="color: #fff;">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+		<br>
+		
+	</div>
+</body>
+
+<script>
+	// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
+</script>
+
+</html>

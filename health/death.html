@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mental Health Board v0.01</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap');
+	</style> 
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+
+<body>
+	<div class="header" style="padding-bottom: 0em; margin-bottom: 0em;">
+		<div class="row" style="padding: 0em 2em; margin-bottom: 0em;">
+			<div class="column notlogo" style="padding: 0em; margin-bottom: 0em; color: #BAD7DF">
+				<h1>Community Health Dashboard
+				</h1>
+				<br>
+				<h2 style="color: #fff;">City of Rockford, IL
+				</h2>
+				<br><br><i>A finger on the pulse of health in our city!</i>
+				<br> &nbsp;
+			</div>
+			<div class="column logo" style="padding: 0em; margin-bottom: 0em;">
+			<img src="https://rockfordil.gov/wp-content/themes/rockford/assets/images/General/Rockford_Logo.png" class="responsive-img">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="header_special">
+
+		<div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+		</div>
+
+		<div class="main_menu">
+			<div>
+				<button onclick="location.href='../index.html'">Home</button>
+				<div class="dropdown">
+				  <button class="dropbtn active">Health Indicators</button>
+				  <div class="dropdown-content">
+				    <a href="../health/overdose.html">Overdose</a>
+				    <a href="../health/death.html">Death</a>
+				    <a href="../health/pregnancy.html">Pregnancy</a>
+				  </div>
+				</div>
+				<div class="dropdown">
+				  <button class="dropbtn">Social Determinants</button>
+				  <div class="dropdown-content">
+				    <a href="../social/healtgcare.html">Healthcare Access</a>
+				    <a href="../social/education.html">Education Access</a>
+				    <a href="../social/community.html">Community Context</a>
+				    <a href="../social/economic.html">Economic Stability</a>
+				    <a href="../social/built.html">Built Environment</a>
+				  </div>
+				</div>
+				<button onclick="location.href='../map/community.html'">Communtiy Map</button>
+			</div>
+		</div>
+		
+		<div class="sub_menu">
+				<button>Health Indicators</button> >
+				<button onclick="location.href='../health/overdose.html'">Overdose</button> | 
+				<button onclick="location.href='../health/death.html'" class="active">Death</button> | 
+				<button onclick="location.href='../health/pregnancy.html'">Pregnancy</button>
+		</div>
+	</div>
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Deaths by <strong>Cause</strong> (2020)</h2>
+	    <img src="death/Cause of Death.png" class="responsive-img">
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>These are the leading causes of death in Winnebago County for 2020. Each of these causes is detailed in a graph below on this page. <br><br>
+	    Please scroll down for more information on each of the causes.
+	    </p>
+
+		<ul>
+			<li>
+				<a href="https://dph.illinois.gov/data-statistics/vital-statistics/death-statistics.html" target="_blank" style="font-size: 1em;">Source</a>
+			</li>
+		</ul>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Deaths from <strong>Heart Disease</strong> (2020)</h2>
+	    <iframe src="death/Heart Disease 2020.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>The term <strong>heart disease</strong> refers to any disease involving the heart or blood vessels. The most common ones being <a href="https://www.cdc.gov/heartdisease/coronary_ad.htm" target="_blank">Coronary Heart Diseases</a> such as <a href="https://en.wikipedia.org/wiki/Angina_pectoris" target="_blank">angina</a> and <a href="https://en.wikipedia.org/wiki/Myocardial_infarction" target="_blank">heart attacks</a>.
+		<br>
+	    <br>
+	    <a href="https://en.wikipedia.org/wiki/Stroke" target="_blank">Strokes</a> are also a type of heart disease but are not included in the numbers shown in this graphic. Strokes have been given their own category further down the page.
+	    <br>
+	    <br>
+	    The CDC estimates that 47% of Americans have something elevating their risk of heart disease including diabetes, metabolic syndrome, and alcohol consumption.<sup><a href="https://www.cdc.gov/heartdisease/about.htm" target="_blank">[1]</a></sup>
+	    <br>
+	    <br>
+	    <strong>1 in every 4 deaths</strong> in the United States is from heart disease.
+		<br>
+	    <br>
+	    For more information on heart disease, please visit <a href="https://www.cdc.gov/heartdisease/about.htm" target="_blank">the CDC page on heart disease</a>.
+	    </p>
+
+		<ul>
+			<li>
+				<a href="https://dph.illinois.gov/data-statistics/vital-statistics/death-statistics.html" target="_blank" style="font-size: 1em;">Source</a>
+			</li>
+		</ul>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Deaths from <strong>Cancer</strong> (2020)</h2>
+	    <iframe src="death/Cancer 2020.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>
+	    	Cancers are any of a group of diseases involving abnormal cell growth with the potential to invade or spread to other parts of the body. 
+	    	<br><br>
+	    	Approximately 22% of cancer deaths can be attributed to tobacco in all of its forms.<sup><a href="https://www.who.int/en/news-room/fact-sheets/detail/cancer" target="_blank">[2]</a></sup>	Many infectious diseases cause cancer and many cases of cancer are due to inherited genetic factors. The five-year survival rate for cancer in the United States is 66%.<sup><a href="http://seer.cancer.gov/statfacts/html/all.html" target="_blank">[3]</a></sup>
+
+	    </p>
+
+		<ul>
+			<li>
+				<a href="https://dph.illinois.gov/data-statistics/vital-statistics/death-statistics.html" target="_blank" style="font-size: 1em;">Source</a>
+			</li>
+		</ul>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Deaths from <strong>COVID-19</strong> (2020)</h2>
+	    <iframe src="death/COVID-19 2020.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p><a href="https://en.wikipedia.org/wiki/COVID-19" target="_blank">COVID-19</a> is a disease spread by a virus known as Severe acute respiratory syndrome coronavirus 2 or <a href="https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2" target="_blank">SARS-CoV-2</a>.
+		<br>
+		<br>
+	    The short term affects of COVID-19 vary from person to person but include fever, headache, cough, fatigue, breathing difficulties, and loss of smell/taste. Around 1/3 of people who infected will have no symptoms<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7839426" target="_blank">[4]</a></sup> but most will develop mild to extreme or even critical symtoms ranging from mild pneumonia to respiratry failure.<sup><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/clinical-guidance-management-patients.html" target="_blank">[5]</a></sup>
+		<br>
+		<br>
+		The long-term effects of COVID-19 infection are currently unknown. Many people experience symptoms long after their infection is over. This is known as <a href="https://en.wikipedia.org/wiki/Long_COVID" target="_blank">Long COVID or post-COVID-19 syndrome</a>. 13.7% of people who tested positive for SARS-CoV-2 had at least one symptom last longer than 12 weeks. <sup><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/bulletins/prevalenceofongoingsymptomsfollowingcoronaviruscovid19infectionintheuk/1april2021" target="_blank">[6]</a></sup>
+	     </p>
+
+		<button type="button" class="fill">
+			<div>Source</div>
+		</button>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Deaths from <strong>Accidents</strong> (2020)</h2>
+	    <iframe src="death/Accidents 2020.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur dui in dolor egestas vestibulum. Mauris egestas laoreet nunc, quis varius odio faucibus eu. Duis ante dui, bibendum eu velit nec, consectetur tristique ex. 
+		<br><br>
+	    Nunc aliquam leo ac varius tincidunt. Maecenas porta, neque sed laoreet cursus, nunc nisi pulvinar diam, id tincidunt nunc lacus ac ante. Mauris mauris est, vestibulum eu consectetur et, hendrerit ut libero. Aenean dignissim vulputate quam, sed fringilla diam venenatis at. 
+	    <br><br>
+	    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nisl sapien, venenatis id dolor vitae, mattis varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit nibh in sapien ornare, eget vehicula massa euismod. 
+		<br><br>
+		Vivamus a tincidunt enim. </p>
+
+		<button type="button" class="fill">
+			<div>Source</div>
+		</button>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Deaths from <strong>Strokes</strong> (2020)</h2>
+	    <iframe src="death/Strokes 2020.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>When brain cells die from a lack of blood, the event is known as a stroke. The two types of stroke are <a href="https://en.wikipedia.org/wiki/Brain_ischemia" target="_blank">strokes due to lack of blood flow known as ischemic</a>, and <a href="https://en.wikipedia.org/wiki/Intracranial_hemorrhage" target="_blank">strokes due to bleeding known as hemorrhagic</a>.
+		<br><br>
+	    Stroke risk is increased from many things including tobacco, metabolic syndrome, highblood cholesterol, diabetes, and end-stage kidney disease.
+	    </p>
+
+		<button type="button" class="fill">
+			<div>Source</div>
+		</button>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Deaths from <strong>Chronic Lower Respiratory Diseases</strong> (2020)</h2>
+	    <iframe src="death/Chronic Lower Respiratory Diseases 2020.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur dui in dolor egestas vestibulum. Mauris egestas laoreet nunc, quis varius odio faucibus eu. Duis ante dui, bibendum eu velit nec, consectetur tristique ex. 
+		<br><br>
+	    Nunc aliquam leo ac varius tincidunt. Maecenas porta, neque sed laoreet cursus, nunc nisi pulvinar diam, id tincidunt nunc lacus ac ante. Mauris mauris est, vestibulum eu consectetur et, hendrerit ut libero. Aenean dignissim vulputate quam, sed fringilla diam venenatis at. 
+	    <br><br>
+	    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nisl sapien, venenatis id dolor vitae, mattis varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit nibh in sapien ornare, eget vehicula massa euismod. 
+		<br><br>
+		Vivamus a tincidunt enim. </p>
+
+		<button type="button" class="fill">
+			<div>Source</div>
+		</button>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Deaths from <strong>Alzheimers</strong> (2020)</h2>
+	    <iframe src="death/Alzheimers 2020.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur dui in dolor egestas vestibulum. Mauris egestas laoreet nunc, quis varius odio faucibus eu. Duis ante dui, bibendum eu velit nec, consectetur tristique ex. 
+		<br><br>
+	    Nunc aliquam leo ac varius tincidunt. Maecenas porta, neque sed laoreet cursus, nunc nisi pulvinar diam, id tincidunt nunc lacus ac ante. Mauris mauris est, vestibulum eu consectetur et, hendrerit ut libero. Aenean dignissim vulputate quam, sed fringilla diam venenatis at. 
+	    <br><br>
+	    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nisl sapien, venenatis id dolor vitae, mattis varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit nibh in sapien ornare, eget vehicula massa euismod. 
+		<br><br>
+		Vivamus a tincidunt enim. </p>
+
+		<button type="button" class="fill">
+			<div>Source</div>
+		</button>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Deaths from <strong>Diabetes</strong> (2020)</h2>
+	    <iframe src="death/Diabetes 2020.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur dui in dolor egestas vestibulum. Mauris egestas laoreet nunc, quis varius odio faucibus eu. Duis ante dui, bibendum eu velit nec, consectetur tristique ex. 
+		<br><br>
+	    Nunc aliquam leo ac varius tincidunt. Maecenas porta, neque sed laoreet cursus, nunc nisi pulvinar diam, id tincidunt nunc lacus ac ante. Mauris mauris est, vestibulum eu consectetur et, hendrerit ut libero. Aenean dignissim vulputate quam, sed fringilla diam venenatis at. 
+	    <br><br>
+	    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nisl sapien, venenatis id dolor vitae, mattis varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit nibh in sapien ornare, eget vehicula massa euismod. 
+		<br><br>
+		Vivamus a tincidunt enim. </p>
+
+		<button type="button" class="fill">
+			<div>Source</div>
+		</button>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Deaths from <strong>Kidney Disease</strong> (2020)</h2>
+	    <iframe src="death/Kidney Disease 2020.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur dui in dolor egestas vestibulum. Mauris egestas laoreet nunc, quis varius odio faucibus eu. Duis ante dui, bibendum eu velit nec, consectetur tristique ex. 
+		<br><br>
+	    Nunc aliquam leo ac varius tincidunt. Maecenas porta, neque sed laoreet cursus, nunc nisi pulvinar diam, id tincidunt nunc lacus ac ante. Mauris mauris est, vestibulum eu consectetur et, hendrerit ut libero. Aenean dignissim vulputate quam, sed fringilla diam venenatis at. 
+	    <br><br>
+	    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nisl sapien, venenatis id dolor vitae, mattis varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit nibh in sapien ornare, eget vehicula massa euismod. 
+		<br><br>
+		Vivamus a tincidunt enim. </p>
+
+		<button type="button" class="fill">
+			<div>Source</div>
+		</button>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Deaths from <strong>Flu and Pneumonia</strong> (2020)</h2>
+	    <iframe src="death/Flu and Pneumonia 2020.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur dui in dolor egestas vestibulum. Mauris egestas laoreet nunc, quis varius odio faucibus eu. Duis ante dui, bibendum eu velit nec, consectetur tristique ex. 
+		<br><br>
+	    Nunc aliquam leo ac varius tincidunt. Maecenas porta, neque sed laoreet cursus, nunc nisi pulvinar diam, id tincidunt nunc lacus ac ante. Mauris mauris est, vestibulum eu consectetur et, hendrerit ut libero. Aenean dignissim vulputate quam, sed fringilla diam venenatis at. 
+	    <br><br>
+	    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nisl sapien, venenatis id dolor vitae, mattis varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit nibh in sapien ornare, eget vehicula massa euismod. 
+		<br><br>
+		Vivamus a tincidunt enim. </p>
+
+		<button type="button" class="fill">
+			<div>Source</div>
+		</button>
+
+	  </div>
+	</div>
+<br>
+
+	<div class="header" style="text-align: center; color: #BAD7DF;">
+		<br>Test site with FAKE DATA for the WCCMHB
+		<br>
+		<br>Go to <a href="http://r1planning.org/wccmhb" style="color: #fff;">Our Site</a>
+		<br>Our Meetings are live and recorded on <a href="https://www.youtube.com/channel/UCsZW04n6FY4rNZWOJlNBNZg" style="color: #fff;">YouTube</a>
+		<br>Our email: <a href="mailto:info@mentalhealth.wincoil.us" style="color: #fff;">info@mentalhealth.wincoil.us</a>
+		
+	</div>
+</body>
+
+<script>
+	// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
+</script>
+
+</html>

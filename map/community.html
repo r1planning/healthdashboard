@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mental Health Board v0.01</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap');
+	</style> 
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+
+<body>
+	<div class="header" style="padding-bottom: 0em; margin-bottom: 0em;">
+		<div class="row" style="padding: 0em 2em; margin-bottom: 0em;">
+			<div class="column notlogo" style="padding: 0em; margin-bottom: 0em; color: #BAD7DF">
+				<h1>Community Health Dashboard
+				</h1>
+				<br>
+				<h2 style="color: #fff;">City of Rockford, IL
+				</h2>
+				<br><br><i>A finger on the pulse of health in our city!</i>
+				<br> &nbsp;
+			</div>
+			<div class="column logo" style="padding: 0em; margin-bottom: 0em;">
+			<img src="https://rockfordil.gov/wp-content/themes/rockford/assets/images/General/Rockford_Logo.png" class="responsive-img">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="header_special">
+
+		<div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+		</div>
+
+		<div class="main_menu">
+			<div>
+				<button>Home</button>
+				<button class="active">Health Indicators</button>
+				<button>Social Determinants</button>
+				<button>Communtiy Map</button>
+			</div>
+		</div>
+		
+		<div class="sub_menu">
+				<button>Health Indicators</button> >
+				<button class="active">Overdose</button> | 
+				<button>Death</button> | 
+				<button>Mothers & Birth</button>
+		</div>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Graph 1</h2>
+	    <iframe src="butts.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>Text</h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur dui in dolor egestas vestibulum. Mauris egestas laoreet nunc, quis varius odio faucibus eu. Duis ante dui, bibendum eu velit nec, consectetur tristique ex. 
+		<br><br>
+	    Nunc aliquam leo ac varius tincidunt. Maecenas porta, neque sed laoreet cursus, nunc nisi pulvinar diam, id tincidunt nunc lacus ac ante. Mauris mauris est, vestibulum eu consectetur et, hendrerit ut libero. Aenean dignissim vulputate quam, sed fringilla diam venenatis at. 
+	    <br><br>
+	    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nisl sapien, venenatis id dolor vitae, mattis varius ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit nibh in sapien ornare, eget vehicula massa euismod. 
+		<br><br>
+		Vivamus a tincidunt enim. </p>
+
+		<button type="button" class="fill">
+			<div>Source</div>
+		</button>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="second">
+	  <div class="column twothird">
+	    <h2>Graph 2</h2>
+	    <iframe src="butts.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>Text</h2>
+	    <p>Mauris scelerisque urna eget sapien interdum, et gravida lectus viverra. Aenean consectetur velit non tellus rutrum, nec malesuada mi consequat. Nam sodales venenatis arcu in interdum. Fusce id mollis libero. Phasellus ornare orci nec ultricies egestas. Integer feugiat nunc nec sodales dignissim. Donec eget libero cursus, luctus dui nec, vestibulum dolor. Cras pharetra, diam nec semper convallis, justo enim bibendum dolor, eget pharetra velit augue at nibh. 
+	    <br><br>
+	    Integer blandit, risus a volutpat vehicula, sem dolor interdum nulla, ac aliquam est nisi at diam. Aenean aliquet ullamcorper ullamcorper. Cras aliquet nec tellus vel tincidunt. Donec tempor, odio vitae elementum porttitor, magna nibh pretium risus, id faucibus massa magna sit amet sapien. Sed a congue justo, rhoncus sagittis purus. Etiam vel nibh vel velit elementum mollis sed nec mi. Sed placerat mauris commodo urna varius posuere id nec ex. Nullam turpis ante, laoreet vitae hendrerit at, venenatis vel urna. Nunc non convallis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec blandit neque at rutrum maximus. In in tortor ligula. Aenean justo odio, ornare in mattis sit amet, mollis eget nibh. Suspendisse ornare ante id malesuada imperdiet. 
+	    </p>
+	    <button type="button" class="fill">
+			<div>Source</div>
+		</button>
+	  </div>
+	</div>
+
+	<div class="header" style="text-align: center; color: #BAD7DF;">
+		<br>Test site with FAKE DATA for the WCCMHB
+		<br>
+		<br>Go to <a href="http://r1planning.org/wccmhb" style="color: #fff;">Our Site</a>
+		<br>Our Meetings are live and recorded on <a href="https://www.youtube.com/channel/UCsZW04n6FY4rNZWOJlNBNZg" style="color: #fff;">YouTube</a>
+		<br>Our email: <a href="mailto:info@mentalhealth.wincoil.us" style="color: #fff;">info@mentalhealth.wincoil.us</a>
+		
+	</div>
+</body>
+
+<script>
+	// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
+</script>
+
+</html>

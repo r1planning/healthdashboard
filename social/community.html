@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mental Health Board v0.01</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap');
+	</style> 
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+
+<body>
+	<div class="header" style="padding-bottom: 0em; margin-bottom: 0em;">
+		<div class="row" style="padding: 0em 2em; margin-bottom: 0em;">
+			<div class="column notlogo" style="padding: 0em; margin-bottom: 0em; color: #BAD7DF">
+				<h1>Community Health Dashboard
+				</h1>
+				<br>
+				<h2 style="color: #fff;">City of Rockford, IL
+				</h2>
+				<br><br><i>A finger on the pulse of health in our city!</i>
+				<br> &nbsp;
+			</div>
+			<div class="column logo" style="padding: 0em; margin-bottom: 0em;">
+			<img src="https://rockfordil.gov/wp-content/themes/rockford/assets/images/General/Rockford_Logo.png" class="responsive-img">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="header_special">
+
+		<div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+		</div>
+
+		<div class="main_menu">
+			<div>
+				<button onclick="location.href='../index.html'">Home</button>
+				<div class="dropdown">
+				  <button class="dropbtn">Health Indicators</button>
+				  <div class="dropdown-content">
+				    <a href="../health/overdose.html">Overdose</a>
+				    <a href="../health/death.html">Death</a>
+				    <a href="../health/pregnancy.html">Pregnancy</a>
+				  </div>
+				</div>
+				<div class="dropdown">
+				  <button class="dropbtn active">Social Determinants</button>
+				  <div class="dropdown-content">
+				    <a href="../social/healthcare.html">Healthcare Access</a>
+				    <a href="../social/education.html">Education Access</a>
+				    <a href="../social/community.html">Community Context</a>
+				    <a href="../social/economic.html">Economic Stability</a>
+				    <a href="../social/built.html">Built Environment</a>
+				  </div>
+				</div>
+				<button onclick="location.href='../map/community.html'">Communtiy Map</button>
+			</div>
+		</div>
+		
+		<div class="sub_menu">
+				<button>Social Determinants</button> >
+				<button onclick="location.href='../social/healthcare.html'">Healthcare Access</button> |
+				<button onclick="location.href='../social/education.html'">Education Access</button> | 
+				<button onclick="location.href='../social/community.html'"  class="active">Community Context</button> |
+				<button onclick="location.href='../social/economic.html'">Economic Stability</button> |
+				<button onclick="location.href='../social/built.html'">Built Environment</button>
+		</div>
+	</div>
+
+	<div class="row" id="first">
+	  <div class="column twothird">
+	    <h2>Percentage of <strong>Disconnected Youth</strong></h2>
+	    <iframe src="community/Disconnected Youth.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>Disconnected Youth are people between the ages of 16 and 19 who are not in school, training, or employed. This graph displays the percentage of all youth aage 16-19 which are disconnected.
+		<br><br>
+	    There has been much emphasis placed on this group as they representan age where decisions have a cascading and lifelong impact. Without education or training it is hard to get a job. <a href="https://www.bls.gov/emp/chart-unemployment-earnings-education.htm" target="_bla">Rates of unemployment are significantly higher among those with less education</a> and with that comes lack of housing stability, mental health issues, physical health, and many other problems. 
+	    </p>
+
+		<ul>
+			<li>
+				<a href="https://fred.stlouisfed.org/series/B14005DCYACS017201" target="_blank" style="font-size: 1em;">Source</a>
+			</li>
+		</ul>
+
+	  </div>
+	</div>
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="second">
+	  <div class="column twothird">
+	    <h2><strong>Homeownership Rate</strong></h2>
+	    <iframe src="community/Homeownership Rate.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>Homeownership rate is the percentage of households (families or individuals or other living arrangements) that own the home they live in outright or have a mortage on the home they live in. 
+	    <br><br>
+	    High homeownership rates are benecifical to a community as they represent stable, long-term commitment by residents to their community. Compared to renters they are less likely to move, compared to landlords they are more likely to make improvements and keep their home in good condition, and the money they spend on housing does not go outside the community to a landlord company.
+	    <br>
+	   	<br>
+	   	Homes also represent a source of wealth for their owners which typically acrues value over time. In communities with low rates of homeownership, this value does not go directly to the residents of the community.
+	    </p>
+	    <ul>
+			<li>
+				<a href="https://fred.stlouisfed.org/series/HOWNRATEACS017201#0" target="_blank" style="font-size: 1em;">Source</a>
+			</li>
+		</ul>
+	  </div>
+	</div>
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="second">
+	  <div class="column twothird">
+	    <h2><strong>Mean Commuting Time</strong></h2>
+	    <iframe src="community/Mean Commuting Time.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>Mean commuting time is the average number of minutes it takes commuters to get to their job. 
+	    <br><br>
+	    <a href="https://www.remoteyear.com/blog/commute-negative-side-effects" target="_blank">The mental toll of commutes is well documented</a> with commuting time being linked to levels of loneliness, stress, depression, and overall bad mental health.
+	    <br>
+	    <br>
+	    Long commuting times also indicate a lack of affordable housing in areas with jobs. For many, there is typically an addage of "drive until you can afford it" for housing. Meaning that one starts where there job is--typically in a city center--and they drive out until the housing becomes affordable. This increases the overall cost of living and cost of having a job as it requires car ownership and increases wear and tear on the vehicle as well as gas. A high or rising mean commuting time may well be a portent of future problems or an indicator of current problems.
+	    <br>
+	    <br>
+	    Commutes also represent a lack of free-time. A 20 minute commute equates to over 3 hours each week which can not be spent with family, children, friends, doing housework, or anything productive.
+	    </p>
+	    <ul>
+			<li>
+				<a href="https://fred.stlouisfed.org/series/B080ACS017201" target="_blank" style="font-size: 1em;">Source</a>
+			</li>
+		</ul>
+	  </div>
+	</div>
+<br>
+	<div class="header divider">
+		<hr style="border: 0;  height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));">
+		<h2>. . .</h2>
+	</div>
+
+	<div class="row" id="second">
+	  <div class="column twothird">
+	    <h2><strong>Food Access</strong></h2>
+	    <iframe src="community/Food Access.html" class="responsive"></iframe>
+	  </div>
+	  <div class="column third">
+	    <h2>&nbsp;</h2>
+	    <p>
+	    </p>
+	    <ul>
+			<li>
+				<a href="https://fred.stlouisfed.org/series/B080ACS017201" target="_blank" style="font-size: 1em;">Source</a>
+			</li>
+		</ul>
+	  </div>
+	</div>
+
+	<div class="header" style="text-align: center; color: #BAD7DF;">
+		<br>Test site with FAKE DATA for the WCCMHB
+		<br>
+		<br>Go to <a href="http://r1planning.org/wccmhb" style="color: #fff;">Our Site</a>
+		<br>Our Meetings are live and recorded on <a href="https://www.youtube.com/channel/UCsZW04n6FY4rNZWOJlNBNZg" style="color: #fff;">YouTube</a>
+		<br>Our email: <a href="mailto:info@mentalhealth.wincoil.us" style="color: #fff;">info@mentalhealth.wincoil.us</a>
+		
+	</div>
+</body>
+
+<script>
+	// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
+</script>
+
+</html>
